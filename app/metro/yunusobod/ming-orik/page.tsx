@@ -1,8 +1,8 @@
-import Link from "next/link"
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Info, MapPin, Search, Menu } from "lucide-react"
+import Link from "next/link";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Clock, Info, MapPin, Search, Menu } from "lucide-react";
 
 export default function StationPage() {
   return (
@@ -168,141 +168,10 @@ export default function StationPage() {
                   </div>
                 </CardContent>
               </Card>
-
-              {/* Real-time Arrivals */}
-              <Card>
-                <CardContent className="p-6">
-                  <h2 className="mb-4 text-xl font-bold">Kelayotgan Poyezdlar</h2>
-                  <div className="space-y-4">
-                    {/* Train from Bodomzor */}
-                    <div className="rounded-lg bg-indigo-900 p-4 text-white">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-orange-500 text-white text-xl font-bold">
-                            S5
-                          </div>
-                          <div>
-                            <h3 className="font-medium">TURKISTON-MING O'RIK</h3>
-                            <p className="text-sm text-gray-200">yo'nalishi</p>
-                          </div>
-                        </div>
-                        <div className="text-right">
-                          <span className="text-4xl font-bold">1</span>
-                          <span className="ml-1">min</span>
-                        </div>
-                      </div>
-                      <div className="mt-4 flex">
-                        <div className="flex-1 flex space-x-1">
-                          <div className="h-10 w-12 rounded-l-lg bg-red-500 flex items-center justify-center">
-                            <div className="w-3 h-6 bg-red-700 rounded-t-sm"></div>
-                          </div>
-                          <div className="h-10 w-10 rounded bg-red-500"></div>
-                          <div className="h-10 w-10 rounded bg-red-500"></div>
-                          <div className="h-10 w-10 rounded bg-orange-500"></div>
-                          <div className="h-10 w-10 rounded bg-orange-500"></div>
-                          <div className="h-10 w-10 rounded bg-green-500"></div>
-                          <div className="h-10 w-10 rounded bg-orange-500"></div>
-                          <div className="h-10 w-10 rounded bg-orange-500"></div>
-                          <div className="h-10 w-10 rounded bg-green-500"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Train to Chilonzor */}
-                    <div className="rounded-lg bg-indigo-900 p-4 text-white">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-3">
-                          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-red-500 text-white text-xl font-bold">
-                            C1
-                          </div>
-                          <div>
-                            <h3 className="font-medium">CHILONZOR</h3>
-                            <p className="text-sm text-gray-200">yo'nalishi</p>
-                          </div>
-                        </div>
-                        <div className="text-right">
-                          <span className="text-4xl font-bold">2</span>
-                          <span className="ml-1">min</span>
-                        </div>
-                      </div>
-                      <div className="mt-4 flex">
-                        <div className="flex-1 flex space-x-1">
-                          <div className="h-10 w-12 rounded-l-lg bg-red-500 flex items-center justify-center">
-                            <div className="w-3 h-6 bg-red-700 rounded-t-sm"></div>
-                          </div>
-                          <div className="h-10 w-10 rounded bg-red-500"></div>
-                          <div className="h-10 w-10 rounded bg-orange-500"></div>
-                          <div className="h-10 w-10 rounded bg-orange-500"></div>
-                          <div className="h-10 w-10 rounded bg-green-500"></div>
-                          <div className="h-10 w-10 rounded bg-green-500"></div>
-                          <div className="h-10 w-10 rounded bg-green-500"></div>
-                          <div className="h-10 w-10 rounded bg-green-500"></div>
-                          <div className="h-10 w-10 rounded bg-green-500"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="mt-4 text-sm text-gray-500">
-                    <p>Vagon sig'imi:</p>
-                    <div className="mt-1 flex items-center gap-3">
-                      <div className="flex items-center gap-1">
-                        <div className="h-3 w-3 rounded-full bg-green-500"></div>
-                        <span>Bo'sh</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <div className="h-3 w-3 rounded-full bg-orange-500"></div>
-                        <span>O'rtacha</span>
-                      </div>
-                      <div className="flex items-center gap-1">
-                        <div className="h-3 w-3 rounded-full bg-red-500"></div>
-                        <span>To'la</span>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
             </div>
 
-            {/* Right Column - Map and Connections */}
+            {/* Right Column - Connections */}
             <div className="space-y-6">
-              <Card>
-                <CardContent className="p-6">
-                  <h2 className="mb-4 text-xl font-bold">Bekat Joylashuvi</h2>
-                  <div className="relative h-[300px] w-full overflow-hidden rounded-lg border">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.3!3d41.3425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDIwJzMzLjAiTiA2OcKwMTYnMDMuMCJF!5e0!3m2!1sen!2s!4v1619705000000!5m2!1sen!2s"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen=""
-                      loading="lazy"
-                      className="absolute inset-0"
-                    ></iframe>
-                  </div>
-                  <div className="mt-4">
-                    <Button className="w-full bg-emerald-600 hover:bg-emerald-700">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="mr-2 h-4 w-4"
-                      >
-                        <circle cx="12" cy="12" r="10" />
-                        <path d="M12 8v4" />
-                        <path d="M12 16h.01" />
-                      </svg>
-                      Yo'nalish olish
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-
               <Card>
                 <CardContent className="p-6">
                   <h2 className="mb-4 text-xl font-bold">Ulanishlar</h2>
@@ -335,6 +204,13 @@ export default function StationPage() {
                         <p className="text-sm text-gray-500">45, 67, 82, 95</p>
                       </div>
                     </div>
-                    <div className="flex items-center gap-3 rounded-lg border p-3">
-                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-red-500 text-white">
-\
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
